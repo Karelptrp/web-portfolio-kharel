@@ -9,7 +9,7 @@ function isDesktop() {
 // Fungsi untuk mengaktifkan link navbar sesuai section yang sedang terlihat
 function activateNav() {
   let currentSection = '';
-  let scrollPos = window.scrollY + 100; // Tambah offset agar lebih akurat
+  let scrollPos = window.scrollY + 100; // Tambah offset biar lebih akurat
   sections.forEach(section => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.offsetHeight;
@@ -30,7 +30,7 @@ function activateNav() {
   });
 }
 
-// cek section to activate navberdasarkan scroll
+// cek section to activate nav by scroll
 window.addEventListener('scroll', activateNav);
 
 // Aktifkan pada load pertama
@@ -42,7 +42,6 @@ window.addEventListener('DOMContentLoaded', function() {
     el.classList.add('visible');
   });
 
-  // Typing effect for home-section h1 and h2
   const h1 = document.querySelector('.home-text h1');
   const h2 = document.querySelector('.home-text h2');
   if (h1 && h2) {
@@ -63,14 +62,12 @@ window.addEventListener('DOMContentLoaded', function() {
     startTypingLoop();
   }
 
-  // Responsive navbar toggle
   var menuIcon = document.getElementById('menu-icon');
   var navbar = document.querySelector('ul.navbar');
   if (menuIcon && navbar) {
     menuIcon.addEventListener('click', function() {
       navbar.classList.toggle('open');
     });
-    // Optional: nutup menu toggle nav pas gua klik sectnya
     navbar.querySelectorAll('a').forEach(function(link) {
       link.addEventListener('click', function() {
         navbar.classList.remove('open');
@@ -79,7 +76,6 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// Animasi mengetik pada h1 dan h2 home section
 function typeEffect(element, text, speed = 45, callback) {
   element.textContent = '';
   let i = 0;
