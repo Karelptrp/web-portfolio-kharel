@@ -11,7 +11,7 @@ section#home {
     z-index: 1;
 }
 
-/* Smooth transition to skills section */
+
 section#home::after {
     content: "";
     display: block;
@@ -79,7 +79,7 @@ nav {
       max-width: 900px;
       padding: 0.5rem 2rem;
       transition: box-shadow 0.2s;
-      /* 3D floating effect */
+      
       filter: drop-shadow(0 8px 24px rgba(0,0,0,0.10));
       }
       nav ul.navbar {
@@ -116,7 +116,7 @@ nav {
         padding: 0.5rem 0.5rem;
       }
       }
-/* Navbar toggler button gua */
+
 .menu-icon {
   font-size: 32px;
   display: none;
@@ -124,7 +124,7 @@ nav {
   margin-left: auto;
   z-index: 1100;
 }
-/* Responsive Styles */
+
 @media only screen and (max-width: 768px) {
     .nav-link {
         position: absolute;
@@ -301,7 +301,6 @@ section#home h2 {
   margin: 0 auto !important;
   z-index: 2;
 }
-/* warna warni eljibiti double */
 .poster-accent {
   position: absolute;
   z-index: 1;
@@ -566,7 +565,7 @@ h1 {
   font-family: 'Flix', Arial, sans-serif !important;
   font-weight: normal !important;
 }
-/* Margin heading agar tidak mepet ke pinggir layar */
+
 h1, h2, h3 {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -580,7 +579,7 @@ h2 {
     margin-right: 1rem;
   }
 }
-/* Margin kiri-kanan untuk list agar tidak mepet */
+
 ul, ol {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -595,7 +594,6 @@ ul li, ol li {
     margin-right: 1rem;
   }
 }
-/* Margin kiri-kanan untuk seluruh elemen teks agar tidak mepet */
 h1, h2, h3, h4, h5, h6, p, ul, ol, li, blockquote, pre, dl, dt, dd {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -606,7 +604,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, blockquote, pre, dl, dt, dd {
     margin-right: 1rem;
   }
 }
-/* Margin kiri-kanan untuk seluruh gambar non-background agar tidak mepet */
 img {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -620,7 +617,6 @@ img {
     max-width: calc(100% - 2rem);
   }
 }
-/* Untuk logo skills agar tetap rapi dalam flex, beri margin pada .skill-logo */
 .skills-logos .skill-logo {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -630,7 +626,6 @@ img {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
   }
-  /*bg about sm kontak*/
 }
 .contact-list.contact-buttons {
   display: grid;
